@@ -22,13 +22,32 @@ public class printDec {
     printInc(m + 1);
   }
 
+
+  public static int  findFactorial(int n){
+
+    if(n== 0){
+    return 1;
+    } 
+  
+  int f = findFactorial(n-1); 
+
+int res = n *findFactorial(n-1);
+ 
+ return res; 
+
+ }
+
   public static void main(String args[]) {
 
     // int n = 10;
     // printNum(n);
 
-    int m =1;
-    printInc(m);
+    // int m =1;
+    // printInc(m);
+
+    int n=5;
+    findFactorial(n);
+    System.out.println( findFactorial(5));
   }
 
 }
