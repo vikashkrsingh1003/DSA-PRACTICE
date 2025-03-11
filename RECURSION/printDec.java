@@ -37,6 +37,16 @@ int res = n *findFactorial(n-1);
 
  }
 
+    public static int naturalSum(int n){
+
+      if(n==1){
+        return 1;
+      }
+      int snm1 =  naturalSum(n-1);
+      int r = n+ snm1;
+
+      return r;
+    }
   public static void main(String args[]) {
 
     // int n = 10;
@@ -46,8 +56,10 @@ int res = n *findFactorial(n-1);
     // printInc(m);
 
     int n=5;
-    findFactorial(n);
-    System.out.println( findFactorial(5));
+    // findFactorial(n);
+    // System.out.println( findFactorial(5));
+
+    System.out.println(naturalSum(5));
   }
 
 }
