@@ -19,7 +19,7 @@ public class stringSubset {
 public static void main(String[] args) {
     
 
-    String str = "abc";
+    String str = "abb";
     findSubset(str, "", 0);
 }
 }
