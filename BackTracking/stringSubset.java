@@ -20,6 +20,6 @@ public static void main(String[] args) {
     
 
     String str = "abcd";
-    findSubset(str, "", 0);
+    findSubset(str,"", 0);
 }
 }
