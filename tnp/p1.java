@@ -9,11 +9,8 @@ public class p1 {
         int x = sc.nextInt();
 
         int n = Integer.toBinaryString(x).length();
-
         int mask = (1 << n)-1;
-
         int tN = x^mask;
-
         System.out.println(tN);
     }
 }

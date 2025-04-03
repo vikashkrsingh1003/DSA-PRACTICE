@@ -32,7 +32,8 @@ public class TCS1 {
             
             if (freq % 2 == 0) {
                 chars[i] = shiftChar(c, x, true);
-            } else {
+            } 
+            else {
                 chars[i] = shiftChar(c, x, false);
             }
         }
@@ -58,10 +59,7 @@ public class TCS1 {
         String s = "abcda";
         int x = 3;
         System.out.println(encrypt(s, x));  
-      
-      
-       
-  }
+       }
     
   }
 
