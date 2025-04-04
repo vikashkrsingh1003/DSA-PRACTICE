@@ -21,10 +21,10 @@ public class largest {
 
     public static int smallestNumber(ArrayList<Integer> list){
 
-        int min = Integer.MAX_VALUE();
+        int min = Integer.MAX_VALUE;
         
         for(int i=0; i<list.size();i++){
-            if(list.get(i)< min){
+            if(list.get(i) < min){
         
               min= list.get(i);
             }  
@@ -34,7 +34,7 @@ public class largest {
     }
 
     
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 
     
     ArrayList<Integer> list = new ArrayList<>();
