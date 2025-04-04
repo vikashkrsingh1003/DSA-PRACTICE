@@ -8,7 +8,7 @@ public class unique {
 
   public static void main(String[] args) {
    
-    int[] arr = {1,2,2,6,4,6};
+    int[] arr = {2,2,6,8,6};
 
     int unique = 0;
 
