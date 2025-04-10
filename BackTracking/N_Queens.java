@@ -34,6 +34,7 @@ public class N_Queens {
 
         if (row == board.length) {
             printBoard(board);
+            count++;
             return;
         }
 
@@ -50,6 +51,9 @@ public class N_Queens {
         }
     }
 
+    //for counting all soln 
+    static int count =0;
+
     public static void printBoard(char board[][]) {
         System.out.println("------Chess Board-----");
         for (int i = 0; i < board.length; i++) {
@@ -62,7 +66,7 @@ public class N_Queens {
 
     public static void main(String[] args) {
 
-        int n = 4;
+        int n = 4 ;
         char board[][] = new char[n][n];
 
         for (int i = 0; i < n; i++) {
@@ -72,6 +76,8 @@ public class N_Queens {
             }
         }
         nQueen(board, 0);
+
+        System.out.println("total ways to slove n queens "+ count);
 
     }
 
